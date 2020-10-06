@@ -1,0 +1,26 @@
+ body {
+    font-family: 'Book Antiqua', cursive;
+    font-size: 100%;
+    margin-right: 10%;
+    margin-left: 10%;
+      }
+
+ h2.style {
+    color:#898a7f;
+	font-size:30px;
+	}
+
+ h3.style {
+    color:#898a7f;
+	font-size:25px;
+	}
+
+ .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+   }
+
+  .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+   }
