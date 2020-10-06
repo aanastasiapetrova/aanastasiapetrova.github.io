@@ -1,6 +1,7 @@
 
+
  body {
-    font-family: 'Book Antiqua', cursive;
+    font-family: 'Book Antiqua';
     font-size: 100%;
     margin-right: 10%;
     margin-left: 10%;
@@ -18,17 +19,17 @@
 	}
 
  .leftimg {
-    float:left; /* Выравнивание по левому краю */
-    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+    float:left; /* Р’С‹СЂР°РІРЅРёРІР°РЅРёРµ РїРѕ Р»РµРІРѕРјСѓ РєСЂР°СЋ */
+    margin: 7px 7px 7px 0; /* РћС‚СЃС‚СѓРїС‹ РІРѕРєСЂСѓРі РєР°СЂС‚РёРЅРєРё */
    }
 
   .rightimg  {
-    float: right; /* Выравнивание по правому краю  */ 
-    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+    float: right; /* Р’С‹СЂР°РІРЅРёРІР°РЅРёРµ РїРѕ РїСЂР°РІРѕРјСѓ РєСЂР°СЋ  */ 
+    margin: 7px 0 7px 7px; /* РћС‚СЃС‚СѓРїС‹ РІРѕРєСЂСѓРі РєР°СЂС‚РёРЅРєРё */
    }
 
    button {
-    font-family: 'Book Antiqua', cursive;
+    font-family: 'Book Antiqua';
     font-size: 100%;
 	background: #dbebc7; 
 	color:#897e8c; 
