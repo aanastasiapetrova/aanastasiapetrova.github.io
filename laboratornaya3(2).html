@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Лабораторная работа №3. Задание №2.</title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+ </head>
+ <body>
+     <center>
+	<h2 class="style">Задание №2.</h2>
+	<p class="style">В предложении удалить наиболее часто встречающуюся букву. Вывести результат в новом окне.</p>
+	</center>
+	<hr>
+	<br>
+	<br>
+	<center>
+	<input id="inputed" size="100">
+	</center>
+	<br>
+	<center>
+	<button onclick="punc2()">Выполнить!</button>
+        <script>
+            function punc2()
+            {
+                let data = document.getElementById("inputed").value;
+                let data1 = data.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g," ");
+                
+                let max_symbols = 0;
+                let index = 0;
+                
+                for (let i = 0; i < data1.length; i++)
+                    {
+                        let counter = 0;
+                        for (let j = 0; j < data1.length; j++)
+                            {
+                                if (data1[i] == data1[j])
+                                        counter++;
+                            }
+                        
+                        if (counter>max_symbols)
+                            {
+                                max_symbols=counter;
+                                index = i;
+                            } 
+                    }
+                
+                let key = data[index];
+                let result = data1.split(data[index]).join("");
+                document.write(result);
+            }
+        </script>
+</body>
+</html>
