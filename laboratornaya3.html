@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
  </head>
  <body>
+     <div class="container">
  <h2 class="style"><p align="center">Лабораторная работа №3</p></h2>
  <h3 class="style"><p align="center">Задания</p></h3>
  <hr>
@@ -42,17 +43,24 @@
 	<br>
     <br>
 	<center>
-	<button>Реализовать идущие часики в заголовке (Title).</button></a>
+        <a href="laboratornaya3(6).html">   
+            <button>Вывести текущую дату в новом окне, нажав на кнопку.</button></a>
 	</center>
 	<br>
     <br>
 	<center>
-	<button>Вывести текущую дату в новом окне, нажав на кнопку.</button></a>
+        <a href="laboratornaya3(7).html">   
+            <button>Реализовать калькулятор в виде формы.</button></a>
 	</center>
-	<br>
-    <br>
-	<center>
-	<button>Реализовать калькулятор в виде формы.</button></a>
-	</center>
+</div>
+     <script>
+          function clock(date)
+            {
+                return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+            }
+          setInterval(
+              document.title=clock(new Date())
+            ,1000)
+      </script>
  </body>
 </html>
