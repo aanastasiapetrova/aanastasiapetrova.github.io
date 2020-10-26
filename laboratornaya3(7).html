@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Лабораторная работа №3. Задание №5.</title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+ </head>
+ <body>
+     <div class="container">
+         <center>
+         <h2 class="style">Задание №7.</h2>
+	     <p class="style">Реализовать калькулятор в виде формы.</p>
+	     </center>
+	     <hr>
+	     <br> 
+         <center>
+         <table cellspacing="10">
+             <tr>
+                 <td><textarea id="input"></textarea></td>
+                 <td><textarea id="result"></textarea></td>
+             </tr>
+         </table>
+             <button onclick="calc()">Вычислить!</button>
+        </center>
+          </div>
+     <script>
+         function calc()
+         {
+             result.value = `${eval(input.value)}`
+         }
+     </script>
+     </body>
+</html>
