@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Лабораторная работа №3. Задание №5.</title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+ </head>
+ <body>
+     <div class="container">
+         <center>
+         <h2 class="style">Задание №6.</h2>
+	     <p class="style">Вывести текущую дату в новом окне, нажав на кнопку.</p>
+	     </center>
+	     <hr>
+	     <br> 
+         <center>
+         <button onclick="curr_date()">Нажмите, чтобы узнать текущую дату!</button>
+         </center>
+     </div>
+     <script>
+         function prep(date)
+            {
+                return `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`
+            }
+         function curr_date()
+         {
+             let date = new Date();
+             document.write(prep(date));
+         }
+     </script>
+</body>
+</html>
