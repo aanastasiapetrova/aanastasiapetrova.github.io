@@ -1,0 +1,146 @@
+.body
+{
+    font-family: "Oranienbaum", sans-serif;
+    font-size: 30px;
+    background: #151515 ;
+    margin: 0;
+}
+
+header
+{
+    position:absolute;
+    display: block;
+    max-height: 210px;
+    max-width: 1100px;
+    margin-top: 40px;
+    margin-left: 270px;
+    margin-right: 270px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo_container
+{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.navigation
+{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.nav
+{
+    font-size: 20px;
+}
+
+.n_link
+{
+    text-decoration: none;
+    color: #bd875f;
+    transition: color 0.3s linear;
+    display: inline-block;
+    margin: 0 35px;
+    margin-left: 0;
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+}
+
+.n_link:hover
+{
+    color: floralwhite;
+}
+
+.search input
+{
+    border-color: #bd875f;
+    background-color: #151515;
+    color: #ffff;
+    font-family: "Oranienbaum", sans-serif;
+}
+
+.button
+{
+    background: transparent;
+    color: #bd875f;
+    font-family: "Oranienbaum", sans-serif;
+}
+
+main
+{
+    height: 210px;
+}
+
+.preview_container
+{
+    display: block;
+    width: 100%;
+    max-width: 1690px;
+    height: 454px;
+    margin-bottom: 0;
+    background-image: url("../img/preview.jpg");
+}
+
+.preview_settings {
+    margin-top: 190px;
+    margin-bottom: 0;
+    height: 466px;
+    width: 100%;
+}
+
+.white_container
+{
+    display: inline-block;
+    width: 1670px;
+    height: 237px;
+    margin-top: -13px;
+    width: 100%;
+    background: url("../img/white-container.jpg");
+}
+
+.img_container
+{
+    margin-top: 30px;
+    margin-left: 270px;
+    display: inline-block;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.img_nav
+{
+    margin-left: 50px;
+}
+
+.grey_container
+{
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    width: 1670px;
+    height: 543px;
+    background-image: url(../img/grey-container.jpg);
+    background-repeat: repeat;
+    
+}
+
+.grey_header
+{
+    margin-left: 310px;
+    padding: 15px;
+    font-size: 50px;
+    border-left: 3px solid #8c010a;
+}
