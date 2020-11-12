@@ -168,6 +168,15 @@ main
     background-repeat: repeat;
 }
 
+.white_containerv2
+{
+    display: flex;
+    height: 1000px;
+    width: 100%;
+    background-color: #ffff;
+}
+
+
 .img_container
 {
     margin-top: 30px;
@@ -312,4 +321,65 @@ a
 .contacts
 {
     text-align: right;
+}
+
+.catalog
+{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog_item
+{
+    width: 200px;
+    height: 250px;
+    margin-right: 50px;
+}
+
+.catalog_item_img
+{
+    width: 200px;
+    height: 150px;
+}
+
+.catalog_item_text
+{
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.catalog_item_price
+{
+    width: 100%;
+    height: 20px;
+    color: #bd875f;
+}
+
+.info_item_text
+{
+    width: 100%;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info_item_other
+{
+    width:100%;
+    font-size: 30px;
+    text-align: left;
+}
+
+.info_button
+{
+    font-family: "Oranienbaum", sans-serif;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid #bd875f;
+    background-color: #ffff;
 }
