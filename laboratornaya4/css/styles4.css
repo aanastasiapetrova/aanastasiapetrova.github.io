@@ -47,12 +47,49 @@ header
     padding-bottom: 30px;
 }
 
+.jewelry_network
+{
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    color: #bd875f;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+
+.contact_info
+{
+    font-size: 25px;
+    font-family: "Oranienbaum";
+    color: floralwhite;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: -70px;
+}
+
+.orange_text
+{
+    color: #bd875f;
+}
+
+.red_text
+{
+    color: #860103;
+}
+
+.red_textv2
+{
+    color: #860103;
+    font-size: 35px;
+}
+
 .navigation
 {
     display: flex;
     align-items:center;
     justify-content: space-between;
     padding-bottom: 30px;
+    margin-top: 40px;
 }
 
 .nav
@@ -77,9 +114,18 @@ header
     color: floralwhite;
 }
 
+.search_icon
+{
+    margin: 0;
+    margin-bottom: -5.5px;
+    margin-right: -8px;
+    border-bottom: 1px solid #bd875f;
+}
+
 .search input
 {
-    border-color: #bd875f;
+    border: none;
+    border-bottom: 1px solid #bd875f;
     background-color: #151515;
     color: #ffff;
     font-family: "Oranienbaum", sans-serif;
@@ -87,6 +133,9 @@ header
 
 .button
 {
+    margin-left: -8px;
+    border: none;
+    border-bottom: 1px solid #bd875f;
     background: transparent;
     color: #bd875f;
     font-family: "Oranienbaum", sans-serif;
@@ -123,14 +172,73 @@ main
 {
     margin-top: 30px;
     margin-bottom: 30px;
+    height: 190px;
     display: flex;
     align-content: center;
     justify-content: space-between;
 }
 
-.img_nav
+.img_nav1
 {
+    font-size: 13pt;
+    padding: 15px;
     margin-left: 20px;
+    width: 300px;
+    background-image: url("../img/new.png");
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+.img_nav2
+{
+    font-size: 13pt;
+    padding: 15px;
+    margin-left: 20px;
+    width: 300px;
+    background-image: url("../img/brands.png");
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+.img_nav3
+{
+    font-size: 13pt;
+    padding: 15px;
+    margin-left: 20px;
+    width: 300px;
+    background-image: url("../img/sales1.png");
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+.img_nav1:hover
+{
+    background-image: url("../img/new1.png");
+    border-bottom: 3px solid #860103;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
+}
+
+.img_nav2:hover
+{
+    background-image: url("../img/brands1.png");
+     border-bottom: 3px solid #860103;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
+}
+
+.img_nav3:hover
+{
+    background-image: url("../img/sales.png");
+     border-bottom: 3px solid #860103;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
 }
 
 .grey_container
