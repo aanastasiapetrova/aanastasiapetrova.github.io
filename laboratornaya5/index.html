@@ -7,7 +7,7 @@
      </head>
     <body class="body">
          <canvas id="canvas" height="40px" width="900px"></canvas>
-        <header class="header"></header>
+        <header class="header"><center><h4>Website: "Letter to Ded Moroz"</h4></center></header>
         <p>Write yor letter to Ded Moroz!</p>
        <div id="form" class="container">
         <textarea id="address" placeholder="Address"></textarea>
@@ -20,8 +20,8 @@
            <br>
        </div>
          <input class="input" type="submit" id="convert_to_letter" value="Create a letter!">
-         <p>Warning: input your data in English language to have the better</p>
-         <p>looking letter...</p>
+         <h4>Warning: input your data in English language to have the better <br> looking letter...</h4>
+         
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.1.1/jspdf.umd.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
@@ -34,6 +34,45 @@ function convertion (canvas, text) {
     return canvas
 }
 
+
+function addText (pdf, canvas, text, x, y) {
+    pdf.addImage(
+        convertion(canvas, text),
+        'PNG',
+        x,
+        y,
+        canvas.width * 0.70 / 5,
+        canvas.height * 0.70 / 5
+    )
+}
+
+convert_to_letter.onclick = function (event) {
+    event.preventDefault()
+
+    const address1 = address.value
+    const date1 = date.value;
+    const author1 = author.value;
+    const message1 = message.value.split('\n');
+
+    const pdf = new jspdf.jsPDF()
+    pdf.addImage('img/frame.png', 'PNG', 0, 0, 210, 300)  // размеры 210x300 растягивают ее на A4
+    addText(pdf, canvas, "From:", 105, 70)
+    addText(pdf, canvas, address1, 120, 70)
+    addText(pdf, canvas, "To:", 105, 80)
+    addText(pdf, canvas, "The North Pole", 120, 80)
+    addText(pdf, canvas, date1, 120, 90)
+    for (let i = 0; i < message1.length; i++) {
+        addText(pdf, canvas, message1[i], 50, 150 + 10 * i)
+    }
+    addText(pdf, canvas, "Best wishes,", 120, 210)
+    addText(pdf, canvas, author1, 120, 220)
+
+    pdf.save('letter.pdf')
+}  
+        
+        </script>
+    </body>
+</html>
 
 function addText (pdf, canvas, text, x, y) {
     pdf.addImage(
