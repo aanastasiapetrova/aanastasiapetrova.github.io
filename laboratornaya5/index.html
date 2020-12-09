@@ -94,7 +94,7 @@ convert_to_letter.onclick = function (event) {
     const message1 = message.value.split('\n');
 
     const pdf = new jspdf.jsPDF()
-    pdf.addImage('img/frame.png', 'PNG', 0, 0, 210, 300)  // размеры 210x300 растягивают ее на A4
+    pdf.addImage('img/frame.png', 'PNG', 0, 0, 210, 300)  
     addText(pdf, canvas, "From:", 105, 70)
     addText(pdf, canvas, address1, 120, 70)
     addText(pdf, canvas, "To:", 105, 80)
